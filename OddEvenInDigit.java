@@ -1,0 +1,30 @@
+package lab.java.one.com;
+
+import java.util.Scanner;
+
+public class OddEvenInDigit {
+
+	public static void main(String[] args) 
+	{
+		Scanner cs=new Scanner(System.in);
+	    int num;
+	    System.out.println("Enter the number:");
+	    num=cs.nextInt();
+	    int odd=0,even=0;
+	    while(num!=0)
+	    {
+	        int rem=num%10;
+	        if(rem%2==1)
+	            odd++;
+	        else
+	            even++;
+	        num/=10;
+	    }
+	    System.out.println("Number of even digits = "+even);
+	    System.out.println("Number of odd digits = "+odd);
+	    cs.close();
+		
+
+	}
+
+}
