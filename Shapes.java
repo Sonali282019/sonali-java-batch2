@@ -1,5 +1,3 @@
-package day3.java.inheritance.com;
-
 class Shape
 {
 	  public void print_shape(){
